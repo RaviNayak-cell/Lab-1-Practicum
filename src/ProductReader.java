@@ -11,7 +11,7 @@ import static java.nio.file.StandardOpenOption.CREATE;
 import java.util.ArrayList;
 import javax.swing.JFileChooser;
 
-public class PersonReader {
+public class ProductReader {
     public static void main(String[] args)
     {
         JFileChooser chooser = new JFileChooser();
@@ -46,8 +46,8 @@ public class PersonReader {
                 BufferedReader reader =
                         new BufferedReader(new InputStreamReader(in));
 
-                System.out.println("ID#           Firstname     Lastname       Title    YOB");
-                System.out.println("=======================================================");
+                System.out.println("          ID#        name         description   cost");
+                System.out.println("=====================================================");
 
                 // Finally we can read the file LOL!
                 int line = 0;
