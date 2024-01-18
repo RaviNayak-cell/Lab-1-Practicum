@@ -28,8 +28,8 @@ public class ProductWriter {
 
         do {
             ID = SafeInput.getNonZeroLenString(in, "Enter the ID");
-            description = SafeInput.getNonZeroLenString(in, "Enter the name");
-            ID = SafeInput.getNonZeroLenString(in, "Enter description");
+            name = SafeInput.getNonZeroLenString(in, "Enter the name");
+            description = SafeInput.getNonZeroLenString(in, "Enter description");
             cost = SafeInput.getRangedDouble(in, "Enter the cost", 100, 9999);
 
             csvRec = ID + ", " + name + ", " + description + ", " + cost;
